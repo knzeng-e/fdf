@@ -6,7 +6,7 @@
 /*   By: knzeng-e <knzeng-e@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 23:39:45 by knzeng-e          #+#    #+#             */
-/*   Updated: 2017/06/16 16:24:04 by knzeng-e         ###   ########.fr       */
+/*   Updated: 2017/06/16 18:23:51 by knzeng-e         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # define ERROR_LINE_SIZE -3
 # define ERROR_DATA -4
 # define SEPARATING_STRING ' '
-# define WIDTH 600
+# define WIDTH 800
 # define HEIGHT 600
 # define SCALE 2
 
@@ -45,10 +45,10 @@ typedef struct	s_infos
 	int			endian;
 	int			bpp;
 	int			*ptr_img;
-	char		*img_data;
+	int			*img_data;
 	t_pixel		*current_pixel;
 }				t_infos;
 
-int	check_map(int fd);
+int	check_map(t_infos *infos);
 int	expose_hook(t_infos *infos);
 #endif
