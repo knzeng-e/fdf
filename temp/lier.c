@@ -6,7 +6,7 @@
 /*   By: knzeng-e <knzeng-e@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/20 18:39:43 by knzeng-e          #+#    #+#             */
-/*   Updated: 2017/06/20 19:55:14 by knzeng-e         ###   ########.fr       */
+/*   Updated: 2017/07/07 11:19:54 by knzeng-e         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 void	putpixel(int x, int y, int c)
 {
 //	infos->img_data[y * infos->size_line + x * ((infos->bpp) / 8)] =  infos->current_pixel->color;
-	mlx_pixel_put(infos->mlx, infos->win, x, y, c);
+	//mlx_pixel_put(infos->mlx, infos->win, x, y, c);
 }
 
 //void	bhm_line(int x1, int y1, int x2, int y2, t_infos *infos)
